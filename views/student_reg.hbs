@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>welcome to DTU</title>
+    <link rel="stylesheet" href="/stylesheet/style.css">
+</head>
+<body style="background-color: blanchedalmond">
+    <h1 class = "collg-name-heading">{{ title }}</h1>
+    <h1 style="text-align: center;color: blue">{{ action }}</h1>
+
+    <form  class = "reg-form" action="/sreg/submit" method="post" >
+        <h3 class="fields">Name:</h3><input type="text" name="nme"><br>
+        <h3 class="fields">Roll number:</h3><input type="text" name="rollno"><br>
+        <h3 class="fields">Branch:</h3><select name="branch">
+                            <option value="coe">COE</option>
+                            <option value="it">IT</option>
+                            <option value="se">SE</option>
+                            <option value="mech">Mechanical</option>
+                            <option value="ece">ECE</option>
+                            <option value="civil">Civil</option>
+                        </select><br>
+        <h3 class="fields">Semester:</h3><input type="number" name="sem"><br>
+        <h3 class="fields">Email Id:</h3><input type="email" name="email"><br>
+        <h3 class="fields">Phone number:</h3><input type="number" name="phno"><br>
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>
